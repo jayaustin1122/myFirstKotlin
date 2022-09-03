@@ -22,8 +22,8 @@ fun main() {
     if ((gender == "M") || (gender == "m")) {
         println("Male")
     } else if ((gender == "F") || (gender == "f")) {
+
         println("Female")
     }else print("Invalid Enter")
-
 
 }
