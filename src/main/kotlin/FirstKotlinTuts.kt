@@ -1,8 +1,6 @@
-
-
-fun main(args: Array<String>) {
-    println("Hello World!")
-    println("Hello World!")
-    println("Hello World!")
+fun main() {
+    print("Enter Name: ")
+    var name : String = readln()
+    print("Your name is "+ name)
 
 }
