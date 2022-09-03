@@ -1,5 +1,5 @@
 fun main() {
-    print("Enter Your First Name: ")
+    print(" Enter Your First Name: ")
     var firstName : String = readln()
     print("Enter Your Middle Name/Initial: ")
     var middleName : String = readln()
