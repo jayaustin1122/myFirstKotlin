@@ -1,4 +1,4 @@
-package ActivitiesExercise
+fun main(){
 
-class `Activity01-A` {
+    var students : String = "Jay"
 }
