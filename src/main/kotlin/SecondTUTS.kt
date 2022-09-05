@@ -16,4 +16,6 @@ fun main (){
     //Starts with
     println(string1.startsWith("tha"))
     println(string1.endsWith("too!"))
+
+    //
 }
