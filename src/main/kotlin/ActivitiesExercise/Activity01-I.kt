@@ -1,4 +1,4 @@
-import kotlin.system.exitProcess
+
 
 fun main (){
     //Welcome message to the user.
@@ -14,11 +14,12 @@ fun main (){
     var item7 : String = "-Cabbage"
     var item8 : String = "-Orange"
     var item9 : String = "-Apple"
+    var item10 : String = " "
     var counter = 5
     // Asking the user to input and select.
     for ( i in 1..5 ){
         print("[1]:Add Item\n[2]:Go to inventory\n[3]:Exit\nSelect: ")
-        --counter
+        counter--
             if (counter == 0){ println("Attempts Run Out. Try To run the Program Again. ")
                 break}
         var select = readln().toString()
@@ -26,8 +27,8 @@ fun main (){
         if (select.toInt() == 1){
             println("---Add Item---")
             print("Enter Item: ")
-            var item = readln().toString()
-            println("Success! $item is Added.")
+            var item10 = readln().toString()
+            println("Success! $item10 is Added.")
             print("Go to Main Menu?Y/N: ")
             var select2 = readln().toString()
                 if (select2 == "Y" || select2 == "y")
@@ -46,6 +47,7 @@ fun main (){
             println("FRUITS & VEGETABLES\n"+item7)
             println(item8)
             println(item9)
+            println(item10)
             break
         }else if(select.toInt() == 3){
                 break
