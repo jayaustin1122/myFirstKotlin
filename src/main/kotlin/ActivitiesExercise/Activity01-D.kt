@@ -1,25 +1,26 @@
-import java.text.BreakIterator
 
 fun main (){
-
-
-    //Creating variables to use loop
+    print("Enter Any Amount: ")
+    var i: String = readln().toString()
     var result = 0
-    for (amount in 1..999999999) {
+    while (true) {
         //enter the user
-        print("Enter Any Amount: ")
-        var i: String = readln().toString()
-        // Checking the Condition and convertions
-        if (i != "No" +
-            "" && i != "no") {
+
+        print("Enter Again?Yes?No: ")
+        var ask: String = readln().toString()
+        // Checking
+        if (ask == "No" && ask == "no") {
+            break
+        }else if (ask == "Yes" && ask == "yes"){
             result += i.toInt()
             continue
         }else
-            println("Total of amounts "+result)
+            println("Total of amounts is $result")
             print("Divide the value by how many?: ")
+        // Division
             var enterNum: Int = readln().toInt()
             var finalResult = result/enterNum
-            println("Equals "+finalResult)
+            println("Equals $finalResult")
             break
     }
     print("Thank You!")
