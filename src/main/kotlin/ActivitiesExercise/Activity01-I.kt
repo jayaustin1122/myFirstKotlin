@@ -1,63 +1,87 @@
 
 
-fun main (){
-    //Welcome message to the user.
-    print("\t----WELCOME----")
-    println(" ")
-    //Creating variable for the items.
-    var item1 : String = "-Shampoo"
-    var item2 : String = "-Soap"
-    var item3 : String = "-Detergent Powder"
-    var item4 : String = "-Pencil"
-    var item5 : String = "-Bond papers"
-    var item6 : String = "-envelopes"
-    var item7 : String = "-Cabbage"
-    var item8 : String = "-Orange"
-    var item9 : String = "-Apple"
-    var item10 : String = " "
-    var counter = 5
-    // Asking the user to input and select.
-    for ( i in 1..5 ){
+fun main () {
+//Welcome message to the user.
+    print("\t----WELCOME TO CARDO'S GROCERY STORE----")
+    println()
+//using arraylist as the container for the items.
+    var toiletries = arrayListOf<String>("Shampoo", "Soap", "Detergent Powder")
+    var scSupplies = arrayListOf<String>("Pencil", "Bond paper", "Envelope")
+    var fruits = arrayListOf<String>("Orange", "Apples", "Grapes")
+//Using While loop for iterating conditions
+    while (true) {
         print("[1]:Add Item\n[2]:Go to inventory\n[3]:Exit\nSelect: ")
-        counter--
-            if (counter == 0){ println("Attempts Run Out. Try To run the Program Again. ")
-                break}
-        var select = readln().toString()
-    //  Checking the Conditions to be executed.
-        if (select.toInt() == 1){
+
+        var select1 = readln().toString()
+        if (select1.length > 1) {       //select .length control input
+            println("Invalid Input!")
+            continue
+        } else if (select1.toInt() == 1) {
+            println()
             println("---Add Item---")
-            print("Enter Item: ")
-            var item10 = readln().toString()
-            println("Success! $item10 is Added.")
-            print("Go to Main Menu?Y/N: ")
+            println()
+// Check input and compare to conditions
+            print("Which Section?\n[1]:TOILESTRIES\n[2]:SCHOOL SUPPLIES\n[3]:FRUITS\nSelect: ")
             var select2 = readln().toString()
-                if (select2 == "Y" || select2 == "y")
-                    continue
-                else if (select2 == "N" || select2 == "n")
-                    break
-                else print("Invalid Input")
-                    break
-        }else if (select.toInt() == 2){
-            println("TIOLETRIES\n"+item1)
-            println(item2)
-            println(item3)
-            println("SCHOOL SUPPLIES\n"+item4)
-            println(item5)
-            println(item6)
-            println("FRUITS & VEGETABLES\n"+item7)
-            println(item8)
-            println(item9)
-            println(item10)
-            break
-        }else if(select.toInt() == 3){
+            println("You Choose Section $select2")
+            if (select2.toInt() == 1) {
+                println("---TOILESTRIES SECTION---")
+                print("Add an item: ")
+                var additem = readln().toString()
+                toiletries.add(additem)
+                println("Success! $additem is Added.")
+                for (i in toiletries)
+                    println(i)
+                continue
+            } else if (select2.toInt() == 2) {
+                println("---SCHOOL SUPPLIES SECTION---")
+                print("Add an item: ")
+                var additem = readln().toString()
+                scSupplies.add(additem)
+                println("Success! $additem is Added.")
+                for (i in scSupplies)
+                    println(i)
+                continue
+            } else if (select2.toInt() == 3) {
+                println("--FRUITS SECTION--")
+                print("Add an item: ")
+                var additem = readln().toString()
+                fruits.add(additem)
+                println("Success! $additem is Added.")
+                for (i in fruits)
+                    println(i)
+                continue
+            } else {
+                println("Invalid Input")
                 break
-        }else {
-            println("Warning you have $counter times attempt!")
-            println("Invalid Input! Please Try Again")
-            println(" ")
+            }
+
+        }else if (select1.toInt() == 2) {
+            println("---TOILESTRIES SECTION---")
+            for (i in toiletries)
+                println(i)
+            println("---SCHOOL SUPPLIES SECTION---")
+            for (i in scSupplies)
+                println(i)
+            println("--FRUITS SECTION--")
+            for (i in fruits)
+                println(i)
+        }else if (select1.toInt() == 3) {
+            println("Exiting")
+            break
+        }else{
+            println("Invalid Input!")
         }
+        print("Go to Main Menu?Y/N: ")
+        var select3 = readln().toString()
+        if (select3 == "Y" || select3 == "y")
+            continue
+        else if (select3 == "N" || select3 == "n"){
+            println("Exiting")
+            break
+        }else print("Invalid Input")
+        break
     }
-    println(" ")
     println("Thank you!")
-    //END
+
 }
