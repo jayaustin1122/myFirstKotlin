@@ -11,8 +11,8 @@ fun main () {
 //Using While loop for iterating conditions
     while (true) {
         print("[1]:Add Item\n[2]:Go to inventory\n[3]:Exit\nSelect: ")
-
         var select1 = readln().toString()
+// Check input and compare to conditions
         if (select1.length > 1) {       //select .length control input
             println("Invalid Input!")
             continue
@@ -20,7 +20,7 @@ fun main () {
             println()
             println("---Add Item---")
             println()
-// Check input and compare to conditions
+        //Check another conditions needed.
             print("Which Section?\n[1]:TOILESTRIES\n[2]:SCHOOL SUPPLIES\n[3]:FRUITS\nSelect: ")
             var select2 = readln().toString()
             println("You Choose Section $select2")
@@ -55,7 +55,7 @@ fun main () {
                 println("Invalid Input")
                 break
             }
-
+// Printing all category of groceries
         }else if (select1.toInt() == 2) {
             println("---TOILESTRIES SECTION---")
             for (i in toiletries)
@@ -66,12 +66,14 @@ fun main () {
             println("--FRUITS SECTION--")
             for (i in fruits)
                 println(i)
+// Exit program
         }else if (select1.toInt() == 3) {
             println("Exiting")
             break
         }else{
             println("Invalid Input!")
         }
+// Ask the user to go to main menu or not.
         print("Go to Main Menu?Y/N: ")
         var select3 = readln().toString()
         if (select3 == "Y" || select3 == "y")
@@ -83,5 +85,4 @@ fun main () {
         break
     }
     println("Thank you!")
-
 }

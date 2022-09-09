@@ -1,0 +1,4 @@
+package ActivitiesExercise
+
+class mynotes {
+}
