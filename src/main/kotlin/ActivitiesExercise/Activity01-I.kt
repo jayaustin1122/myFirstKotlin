@@ -1,5 +1,3 @@
-
-
 fun main () {
 //Welcome message to the user.
     print("\t----WELCOME TO CARDO'S GROCERY STORE----")
@@ -14,7 +12,7 @@ fun main () {
         var select1 = readln().toString()
 // Check input and compare to conditions
         if (select1.length > 1) {       //select .length control input
-            println("Invalid Input!")
+            println("Invalid Input!/ Just Choose 1-3")
             continue
         } else if (select1.toInt() == 1) {
             println()
