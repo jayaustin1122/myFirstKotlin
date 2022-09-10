@@ -3,7 +3,7 @@ fun main() {
         // Your application will print “Palindrome” if the string is a palindrome.
 
         val original: String
-        var reverse = "" // Objects of String class
+        var reverse = "" // container of the reversed input
         // enter user
         print("Enter a string/number to check if it is a palindrome\n ->>: " )
         var word = readln().toString()
@@ -11,7 +11,6 @@ fun main() {
         for (i in length - 1 downTo 0)
                 // reversing the input of the user
                 reverse = reverse + word[i]
-                print(reverse)
         //comparing
         if (word == reverse)
                 println("$word is a Palindrome.")
