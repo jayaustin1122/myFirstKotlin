@@ -1,11 +1,9 @@
 fun main() {
         //Create an application that will accept 1 string.
         // Your application will print “Palindrome” if the string is a palindrome.
-
-        val original: String
         var reverse = "" // container of the reversed input
         // enter user
-        print("Enter a string/number to check if it is a palindrome\n ->>: " )
+        print("Enter a string/number to check if its palindrome\n ->>: " )
         var word = readln().toString()
         val length = word.length
         for (i in length - 1 downTo 0)
