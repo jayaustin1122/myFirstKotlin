@@ -1,8 +1,20 @@
-fun main (){
+fun main() {
+        //Create an application that will accept 1 string.
+        // Your application will print “Palindrome” if the string is a palindrome.
 
-//    Create an application that will accept monetary amounts. The application will continue to accept values until a “No”
-//    is set as input for the question “Do you want to add another amount?”.
-//    After the input is done, the user will be asked “Divide the value by how many?”. It will only accept an Integer as input.
-//    The total of the first input will be divided by the second input.
-//    Note: Error checking must be done.
+        val original: String
+        var reverse = "" // Objects of String class
+        // enter user
+        print("Enter a string/number to check if it is a palindrome\n ->>: " )
+        var word = readln().toString()
+        val length = word.length
+        for (i in length - 1 downTo 0)
+                // reversing the input of the user
+                reverse = reverse + word[i]
+                print(reverse)
+        //comparing
+        if (word == reverse)
+                println("$word is a Palindrome.")
+        else
+                println("$word is not a palindrome.")
 }
