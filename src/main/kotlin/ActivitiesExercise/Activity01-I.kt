@@ -1,5 +1,5 @@
 fun main () {
-//Welcome message to the user.
+//Welcome message to the user..
     print("\t----WELCOME TO CARDO'S GROCERY STORE----")
     println()
 //using arraylist as the container for the items.
