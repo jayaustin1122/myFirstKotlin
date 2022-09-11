@@ -1,8 +1,35 @@
-fun main (){
+import kotlin.system.exitProcess
 
-//    Create an application that will accept monetary amounts. The application will continue to accept values until a “No”
-//    is set as input for the question “Do you want to add another amount?”.
-//    After the input is done, the user will be asked “Divide the value by how many?”. It will only accept an Integer as input.
-//    The total of the first input will be divided by the second input.
-//    Note: Error checking must be done.
+fun main () {
+//    Create an application that will accept 2 string inputs.
+//    Your application will print all unique characters in both Strings.
+    // input user
+    println("----Print Unique Characters in a String----")
+    while (true) {
+        //input the user every loop
+        print("Enter any word: ")
+        var word = readln().toString()
+        for (i in 0 until word.length) {
+            var myVar = 0
+            for (new in 0 until word.length) {
+                if (word[i] == word[new] && i != new) {
+                    myVar = 1
+                    break
+                }
+            }
+            if (myVar == 0)
+                print("-${word[i]}")
+        }
+        //ask the user to input yes or no
+        print("\nEnter Again?Yes/No: ")
+        var input = readln()
+        if (input == "Yes") {
+        } else if (input == "No" || input == "no"){
+            break
+        }
+    }
+    println("\nThank You.")
 }
+
+
+
