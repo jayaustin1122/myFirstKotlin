@@ -14,5 +14,20 @@ fun main (){
             break
         }
     }
+    /*  data structures
+            -1 array  - fixed size, changeable elements -> [ ]
+            -2 collections
+            -3 Arraylist - flexible, not fixed size, changeable components
+            -4 maps - key pair (key i used to reference values)
+                - mapOf()-> readonly -> fixed size, elements no changeable
+                - mutableMapOf() -> flexible, changeable
+            -5 set - unique values, no duplicates,
+                - setOF() -> readonly -> fixed size, elements no changeable
+                - mutableSetOf() -> flexible, changeable
+            -6 list
+                -listOf() = fixed
+                -mutableListOf = Changeable
+
+*/
 
 }
