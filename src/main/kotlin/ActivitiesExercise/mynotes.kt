@@ -27,7 +27,6 @@ fun main (){
             -6 list
                 -listOf() = fixed
                 -mutableListOf = Changeable
-
 */
 
 }
