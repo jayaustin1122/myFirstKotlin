@@ -1,24 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="124af89f-9c07-4f80-98f8-1f7a3378494a" name="Changes" comment="" />
+    <list default="true" id="124af89f-9c07-4f80-98f8-1f7a3378494a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/22Class.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/23Class.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ActivitiesExercise/Activity01-G.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ActivitiesExercise/Activity01-G.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ActivitiesExercise/Activity02-C.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ActivitiesExercise/Activity02-C.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ActivitiesExercise/Activity02-D.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ActivitiesExercise/Activity02-D.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ActivitiesExercise/Activity02-E.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ActivitiesExercise/Activity02-E.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ActivitiesExercise/Activity02-F.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ActivitiesExercise/Activity02-F.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ActivitiesExercise/PracticeActivity7.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ActivitiesExercise/PracticeActivity7.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ActivitiesExercise/PracticeActivity8.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ActivitiesExercise/PracticeActivity8.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ActivitiesExercise/mynotes.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ActivitiesExercise/mynotes.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/practice.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/practice.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin File" />
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2EAJyfVCqPQyJp1MQRWnnTnItEj" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ADMIN/IdeaProjects/kodego1/src/main/kotlin/ActivitiesExercise&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ADMIN\IdeaProjects\kodego1\src\main\kotlin\ActivitiesExercise" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ADMIN\IdeaProjects\kodego1\src\main\kotlin\21Function1" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Activity01_DKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Activity01_DKt" />
+      <module name="kodego1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Activity01_HKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Activity01_HKt" />
+      <module name="kodego1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Activity02_CKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Activity02_CKt" />
+      <module name="kodego1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PracticeKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PracticeKt" />
+      <module name="kodego1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_2FunctionsKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_2FunctionsKt" />
+      <module name="kodego1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Kotlin.PracticeKt" />
+        <item itemvalue="Kotlin._2FunctionsKt" />
+        <item itemvalue="Kotlin.Activity01_DKt" />
+        <item itemvalue="Kotlin.Activity02_CKt" />
+        <item itemvalue="Kotlin.Activity01_HKt" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -29,5 +121,16 @@
       <updated>1662032722487</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
