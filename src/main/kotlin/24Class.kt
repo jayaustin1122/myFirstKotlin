@@ -1,0 +1,2 @@
+class `24Class` {
+}
