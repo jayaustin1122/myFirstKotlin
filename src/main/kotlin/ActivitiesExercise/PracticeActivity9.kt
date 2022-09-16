@@ -67,9 +67,9 @@ class MobilePhone(var cpBrand:String,
     init {
         println("*********************************")
     }
-    //Not all parameters are given
+    //all parameters are not given.
     constructor(cpBrand: String,battery: Int,displaySize: Double):this(cpBrand, battery, "Not Identified", displaySize, 10.0)
-    //all parameters are given
+    //all parameters are given.
     constructor():this("Vivo Y1s", 5500, "Vivo Comp.", 6.22, 10.0)
 
     init {
