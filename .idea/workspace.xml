@@ -2,18 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="124af89f-9c07-4f80-98f8-1f7a3378494a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/22Class.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/23Class.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/26Debugging.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ActivitiesExercise/PracticeActivity10.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/23Class.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/23Class.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/24Class.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/24Class.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/25Classes.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/25Classes.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/ActivitiesExercise/Activity01-G.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ActivitiesExercise/Activity01-G.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/ActivitiesExercise/Activity02-C.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ActivitiesExercise/Activity02-C.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/ActivitiesExercise/Activity02-D.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ActivitiesExercise/Activity02-D.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/ActivitiesExercise/Activity02-E.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ActivitiesExercise/Activity02-E.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/ActivitiesExercise/Activity02-F.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ActivitiesExercise/Activity02-F.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/ActivitiesExercise/PracticeActivity7.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ActivitiesExercise/PracticeActivity7.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ActivitiesExercise/PracticeActivity8.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ActivitiesExercise/PracticeActivity8.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ActivitiesExercise/mynotes.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ActivitiesExercise/mynotes.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/practice.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/practice.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ActivitiesExercise/PracticeActivity9.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ActivitiesExercise/PracticeActivity9.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +55,8 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Users/ADMIN/IdeaProjects/kodego1/src/main/kotlin/ActivitiesExercise&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -65,23 +67,16 @@
       <recent name="C:\Users\ADMIN\IdeaProjects\kodego1\src\main\kotlin\21Function1" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="Activity01_DKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Activity01_DKt" />
+  <component name="RunManager" selected="Kotlin.PracticeActivity10Kt">
+    <configuration name="PracticeActivity10Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PracticeActivity10Kt" />
       <module name="kodego1" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Activity01_HKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Activity01_HKt" />
-      <module name="kodego1" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Activity02_CKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Activity02_CKt" />
+    <configuration name="PracticeActivity9Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PracticeActivity9Kt" />
       <module name="kodego1" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -89,6 +84,13 @@
     </configuration>
     <configuration name="PracticeKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="PracticeKt" />
+      <module name="kodego1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_26DebuggingKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_26DebuggingKt" />
       <module name="kodego1" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -103,11 +105,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.PracticeKt" />
+        <item itemvalue="Kotlin.PracticeActivity10Kt" />
+        <item itemvalue="Kotlin._26DebuggingKt" />
+        <item itemvalue="Kotlin.PracticeActivity9Kt" />
         <item itemvalue="Kotlin._2FunctionsKt" />
-        <item itemvalue="Kotlin.Activity01_DKt" />
-        <item itemvalue="Kotlin.Activity02_CKt" />
-        <item itemvalue="Kotlin.Activity01_HKt" />
+        <item itemvalue="Kotlin.PracticeKt" />
       </list>
     </recent_temporary>
   </component>
@@ -132,5 +134,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/kodego1$PracticeActivity10Kt.ic" NAME="PracticeActivity10Kt Coverage Results" MODIFIED="1663385578855" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
