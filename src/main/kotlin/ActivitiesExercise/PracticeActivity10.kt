@@ -1,9 +1,11 @@
 fun main(){
+    //choose the user to use default phone or add phone
     print("Choose our Phone or Your Phone\n[1]:Our Oppo phone\n" +
                                             "[2]:Your Phone\n" +
                                             "Select Phone:")
     var input = readln().toInt()
     if (input == 1){
+        //First Constructor.
         var phone = SmartPhone()
         phone.mainMenu()
     }else if (input == 2){
@@ -13,11 +15,13 @@ fun main(){
         var charge = readln().toInt()
         print("Current Load: ")
         var load = readln().toDouble()
+        //Second Constructor.
         var urPhone = SmartPhone(load,charge,brand)
         urPhone.mainMenu()
     }
 
 }
+//Primary Constructor.
 class SmartPhone(var load : Double , var batteryPercentage : Int,var brand : String ) {
 
     init {
@@ -25,6 +29,7 @@ class SmartPhone(var load : Double , var batteryPercentage : Int,var brand : Str
         println("Object Created!")
         println("---------------------------")
     }
+    //Secondary Primary.
     constructor():this(20.0,50,"Oppo")
     fun buyLoad() {
         println("---Buy Load---")
@@ -97,6 +102,7 @@ class SmartPhone(var load : Double , var batteryPercentage : Int,var brand : Str
         println("[1]:Our Vivo phone\n[2]:Your Phone\nSelect Phone:")
 
     }
+    //Main menu function.
     fun mainMenu(){
         while (true) {
             print(
