@@ -2,7 +2,7 @@ fun main() {
     //Objects
     println("----CHOOSE---")
     while (true) {
-        print("[1]:Add Item\n[2]:Check Phones\n[3]:Exit\nSelect: ")
+        print("[1]:New Phone\n[2]:Phones\n[3]:Exit\nSelect: ")
         var check = readln().toInt()
         if (check > 3|| check < 1) {
             print("Invalid Out of range.")
