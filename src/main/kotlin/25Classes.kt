@@ -1,10 +1,9 @@
 fun main(){
 
-
-
 }
 //Empty class
 class Empty
+
 //Nested class cannot access the inner class
 class Outer{
     val name = "Outer"
@@ -15,6 +14,7 @@ class Outer{
         fun show() = "The name is $name"
     }
 }
+
 //Inner class can access the inner class vise versa
 class Outer2{
     val name1 = "Outer2"
