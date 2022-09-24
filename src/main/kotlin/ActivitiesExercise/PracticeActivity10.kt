@@ -1,8 +1,9 @@
 fun main(){
     //choose the user to use default phone or add phone
-    print("Choose our Phone or Your Phone\n[1]:Our Oppo phone\n" +
-                                            "[2]:Your Phone\n" +
-                                            "Select Phone:")
+    print("Choose Phone \n" +
+                            "[1]:Company phone\n" +
+                            "[2]:Your Phone\n" +
+                            "Select Phone:")
     var input = readln().toInt()
     if (input == 1){
         //First Constructor.
@@ -49,12 +50,13 @@ class SmartPhone(var load : Double , var batteryPercentage : Int,var brand : Str
         print("Enter desired Percent: ")
         var percent: Int = readln().toInt()
         if (percent < 0 || percent > 100) {
-            println("Invalid!")
+            println("Invalid!! A battery should have only 100% maximum.")
         } else {
             this.batteryPercentage = this.batteryPercentage + percent
             println("Success $percent% is successfully added.")
             println("Battery Percent ${this.batteryPercentage}%")
         }
+
     }
 
     fun sendText() {
