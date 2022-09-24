@@ -1,2 +1,3 @@
-class `28throwException` {
+fun main (){
+    throw Exception("Warning!!!!!")
 }
