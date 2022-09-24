@@ -1,8 +1,26 @@
-fun main (){
+fun main() {
+/*    Create an application that will accept 2 Integers.
+    It will identify the lower value and bigger value of the two inputs.
+    Then, your application will print all the prime numbers starting
+    from the lower number up to the largest number.
+  */
+    print("Enter Number1: ")
+    var num1 = readln().toInt()
+    print("Enter Number1: ")
+    var num2 = readln().toInt()
+    println("The prime number between $num1 and $num2 are:")
+    for(i in num1..num2) {
+        if (i > 1) {
+            for (j in 2..i/2) {
+                if (i % j == 0) {
+                    break
+                }else{
+                    println(i)
+                }
 
-//    Create an application that will accept monetary amounts. The application will continue to accept values until a “No”
-//    is set as input for the question “Do you want to add another amount?”.
-//    After the input is done, the user will be asked “Divide the value by how many?”. It will only accept an Integer as input.
-//    The total of the first input will be divided by the second input.
-//    Note: Error checking must be done.
+            }
+        }
+    }
 }
+
+
