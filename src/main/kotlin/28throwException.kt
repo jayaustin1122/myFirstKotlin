@@ -1,0 +1,2 @@
+class `28throwException` {
+}
