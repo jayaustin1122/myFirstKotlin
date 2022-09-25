@@ -5,10 +5,8 @@ fun main() {
         // enter user
         print("Enter a string/number to check if its palindrome\n ->>: " )
         var word = readln().toString()
-        val length = word.length
-        for (i in length - 1 downTo 0)
-                // reversing the input of the user
-                reverse = reverse + word[i]
+        // reversing the input of the user
+        reverse = word.reversed()
         //comparing
         if (word == reverse)
                 println("$word is a Palindrome.")
