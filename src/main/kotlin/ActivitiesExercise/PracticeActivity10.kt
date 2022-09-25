@@ -1,9 +1,11 @@
+import kotlin.system.exitProcess
+
 fun main(){
     //choose the user to use default phone or add phone
     print("Choose Phone \n" +
-                            "[1]:Company phone\n" +
-                            "[2]:Your Phone\n" +
-                            "Select Phone:")
+            "[1]:Company phone\n" +
+            "[2]:Your Phone\n" +
+            "Select Phone:")
     var input = readln().toInt()
     if (input == 1){
         //First Constructor.
@@ -47,16 +49,22 @@ class SmartPhone(var load : Double , var batteryPercentage : Int,var brand : Str
     }
     fun chargeBattery() {
         println("---Charge Phone---")
+        println("Current Battery Charge: ${this.batteryPercentage}")
         print("Enter desired Percent: ")
         var percent: Int = readln().toInt()
+        this.batteryPercentage = this.batteryPercentage + percent
+        var result = this.batteryPercentage
         if (percent < 0 || percent > 100) {
-            println("Invalid!! A battery should have only 100% maximum.")
-        } else {
-            this.batteryPercentage = this.batteryPercentage + percent
+            println("Invalid Input! A battery should have only 100% maximum.")
+        } else if (result > 100){
+                println("Invalid! battery charge $result%.\n" +
+                        "A battery charge does not exceed to 100% Please Try Again.")
+                println("Exit Program...")
+                exitProcess(1)
+        }else{
             println("Success $percent% is successfully added.")
             println("Battery Percent ${this.batteryPercentage}%")
         }
-
     }
 
     fun sendText() {
@@ -71,14 +79,12 @@ class SmartPhone(var load : Double , var batteryPercentage : Int,var brand : Str
         }
         println("Balance: ${this.load}")
     }
-
     fun checkStatus() {
         println("---STATUS---")
         println(this.brand)
         println("Your Load Balance is ${this.load}")
         println("Your Battery Percent is ${this.batteryPercentage}%")
-        }
-
+    }
     fun callminutes() {
         println("---Call---")
         println("8 load per 1 Minute Call")
@@ -147,4 +153,3 @@ class SmartPhone(var load : Double , var batteryPercentage : Int,var brand : Str
         println("Thank you!")
     }
 }
-

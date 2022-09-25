@@ -2,4 +2,4 @@ package ActivitiesExercise
 
 import org.junit.jupiter.api.Assertions.*
 
-internal class DiscountTest
+internal class PracticeActivity11KtTest
