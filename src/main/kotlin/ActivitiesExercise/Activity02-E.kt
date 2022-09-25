@@ -9,7 +9,6 @@ class MiniLibrary() {
     var books1 = arrayListOf<String>("English", "Trigo", "Comic Book", "Newspaper")
     var fullName1 = arrayListOf<String>()
     var datenow1 = arrayListOf<String>()
-
     fun mainMenuofLibrary() {
         while (true) {
             //Main menu of the program
