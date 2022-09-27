@@ -9,7 +9,6 @@ fun main() {
         reverse = word.reversed()
         //comparing
         if (word == reverse)
-                println("$word is a Palindrome.")
-        else
-                println("$word is not a palindrome.")
+        println("$word is a Palindrome.")
+        else println("$word is not a palindrome.")
 }
