@@ -1,121 +1,110 @@
 fun main(){
-//Implement Activity 02 - B using Classes.
+    //Implement Activity 02 - B using Classes.
     println("\t---Welcome to E-Library---")
     var library = MiniLibrary()
-    library.mainMenuofLibrary()
-}
-//global variable
-class MiniLibrary() {
-    var books1 = arrayListOf<String>("English", "Trigo", "Comic Book", "Newspaper")
-    var fullName1 = arrayListOf<String>()
-    var datenow1 = arrayListOf<String>()
-    fun mainMenuofLibrary() {
-        while (true) {
-            //Main menu of the program
-            println("---MAIN MENU---")
-            print("[1]:Books\n[2]:Borrow a Book\n[3]:Return Book\n[4]:Borrowers Info\n[5]:Exit\nSelect: ")
-            var select = readln().toString()
-            // Checking Conditions
-            if (select.length > 5) {
-                println("Invalid Input/Out of range")
-                break
-            } else if (select.toInt() == 1) {
-                listofBooks1()
-            } else if (select.toInt() == 2) {
-                userInfo1()
-                borrowBooks1()
-            } else if (select.toInt() == 3) {
-                returnBooks1()
-            } else if (select.toInt() == 4) {
-                printUser()
-            } else if (select.toInt() == 5) {
-                break
-            }else {
-                println("Invalid Input!/Out of Range!")
-                break
-            }
-            println("Thank you!")
+    while (true) {
+        //Main menu of the program
+        println("---MAIN MENU---")
+        print("[1]:Books\n[2]:Borrow a Book\n[3]:Return Book\n[4]:Borrowers Info\n[5]:Borrowed Books\n[6]:Exit\nSelect: ")
+        var select = readln().toString()
+        // Checking Conditions
+        if (select.length > 2) {
+            println("Invalid Input/Out of range")
+            break
+        } else if (select.toInt() == 1) {
+            library.listofBooks1()
+        } else if (select.toInt() == 2) {
+            //enter user's details
+            println("---Fill This Form to Borrow a book---")
+            print("Enter Name: ")
+            var input1 = readln()
+            print("Enter Current Date[mm/dd/yyyy]: ")
+            var input2 = readln()
+            library.userInfo1(input1,input2)
+            library.listofBooks1()
+            println("---Borrow a Books---")
+            print("Select Book Num: ")
+            var input3 = readln().toInt()
+            library.borrowBooks1(input3-1)
+        } else if (select.toInt() == 3) {
+            library.borrowed_Books()
+            println("---Return Book---")
+            print("Enter Book Number: ")
+            var returnBook = readln().toInt()
+            library.returnBooks1(returnBook-1)
+        } else if (select.toInt() == 4) {
+            library.printUser()
+        } else if (select.toInt() == 5) {
+            library.borrowed_Books()
+        } else if (select.toInt() == 6) {
+            break
+        }else {
+            println("Invalid Input! Use Numbers only")
             break
         }
+        print("Go to Main Menu?Y/N: ")
+        var select3 = readln()
+        if (select3 == "Y" || select3 == "y")
+            continue
+        else if (select3 == "N" || select3 == "n"){
+            println("Exiting")
+            break
+        }else print("Invalid Input")
+        break
     }
-
+}
+class MiniLibrary{
+    var books1 = arrayListOf<String>("Science","Trigo", "Comic Book", "Newspaper")
+    var barrowedBooks = arrayListOf<String>()
+    var fullName1 = arrayListOf<String>()
+    var datenow1 = arrayListOf<String>()
     //Function for list of books.
-    fun listofBooks1 (){
+    fun listofBooks1(){
         println("---Books---")
         var counter = 0
         for (i in books1){
             counter +=1
-            println("${counter.toString()}: $i" )
+            println("${counter}: $i" )
         }
-        mainMenuofLibrary()
+        println("------------------------------")
+    }
+    fun borrowed_Books(){
+        println("---Your Borrowed Books---")
+        var counter = 0
+        for (i in barrowedBooks){
+            counter +=1
+            println("${counter}: $i" )
+        }
+        println("------------------------------")
     }
     //Function for Borrow books.
-    fun borrowBooks1(){
-        println("---Borrow a Books---")
-        var counter = 0
-        for (i in books1){
-            counter +=1
-            println("${counter.toString()}: $i" )
-        }
-        //Checking another condtion
-        print("Select[1-4]: ")
-        var input = readln().toString()
-        if      (input.toInt() == 1){
-            books1.remove(books1[0])
-            println("Success! Dont Forget to return It.")
-            for (i in fullName1)
-                for (j in datenow1)
-                    println("Borrower Full Name: $i\nDate Borrowed: $j")
-        }else if (input.toInt() == 2){
-            books1.remove(books1[1])
-            println("Success! Dont Forget to return It.")
-            for (i in fullName1)
-                for (j in datenow1)
-                    println("Borrower Full Name: $i\nDate Borrowed: $j")
-        }else if (input.toInt() == 3){
-            books1.remove(books1[2])
-            println("Success! Dont Forget to return It.")
-            for (i in fullName1)
-                for (j in datenow1)
-                    println("Borrower Full Name: $i\nDate Borrowed: $j")
-        }else if (input.toInt() == 4){
-            books1.remove(books1[3])
-            println("Success! Dont Forget to return It.")
-            for (i in fullName1)
-                for (j in datenow1)
-                    println("Borrower Full Name: $i\nDate Borrowed: $j")
-        }else println("Invalid Input!/Out of Range!")
-        mainMenuofLibrary()
+    fun borrowBooks1(book:Int){
+        barrowedBooks.add(books1[book])
+        books1.remove(books1[book])
+        println("Success! Dont Forget to return It.")
+        println("------------------------------")
     }
     //Function for users input details.
-    fun userInfo1(){
-        //enter user's details
-        println("---Fill This Form---")
-        print("Enter Name: ")
-        var input1 = readln().toString()
-        fullName1.add(input1)
-        print("Enter Current Date[mm/dd/yyyy]: ")
-        var input2 = readln().toString()
-        datenow1.add(input2)
-        borrowBooks1()
+    fun userInfo1(fullname:String,date:String){
+        fullName1.add(fullname)
+        datenow1.add(date)
+        println("------------------------------")
     }
     //Function return books
-    fun returnBooks1() {
-        println("---Return Book---")
-        print("Enter Book: ")
-        var input2 = readln().uppercase()
-        books1.add(input2)
-        println("Success $input2 is Returned to our library!")
-        mainMenuofLibrary()
+    fun returnBooks1(book: Int) {
+        books1.add(books1[book])
+        barrowedBooks.remove(books1[book])
+        println("Success The book is Returned to our library!\nThank You!")
+        println("------------------------------")
     }
     fun printUser(){
         var counter1 = 1
         var counter2 = 0
         println("Borrowers Details:")
         println("------------------------------")
-        for (i in fullName1){
-            println("${counter1}: Name: $i\nDate Borrowed: ${datenow1[counter2]}")
+        for (i in fullName1) {
+            println("${counter1}:\nName: $i\nDate Borrowed: ${datenow1[counter2]}")
+            println("---------------------------------")
         }
-        mainMenuofLibrary()
     }
 }
