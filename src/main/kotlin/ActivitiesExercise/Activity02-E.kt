@@ -25,13 +25,13 @@ fun main(){
             println("---Borrow a Books---")
             print("Select Book Num: ")
             var input3 = readln().toInt()
-            library.borrowBooks1(input3-1)
+            library.borrowBooks2(input3)
         } else if (select.toInt() == 3) {
             library.borrowed_Books()
             println("---Return Book---")
             print("Enter Book Number: ")
             var returnBook = readln().toInt()
-            library.returnBooks1(returnBook-1)
+            library.returnBooks1(returnBook)
         } else if (select.toInt() == 4) {
             library.printUser()
         } else if (select.toInt() == 5) {
@@ -54,8 +54,8 @@ fun main(){
     }
 }
 class MiniLibrary{
-    var books1 = arrayListOf<String>("Science","Trigo", "Comic Book", "Newspaper")
-    var barrowedBooks = arrayListOf<String>()
+    var books1 = arrayListOf<String>("Trigo", "Comic Book", "Newspaper","Science")
+    var borrowedBooks = arrayListOf<String>()
     var fullName1 = arrayListOf<String>()
     var datenow1 = arrayListOf<String>()
     //Function for list of books.
@@ -71,18 +71,20 @@ class MiniLibrary{
     fun borrowed_Books(){
         println("---Your Borrowed Books---")
         var counter = 0
-        for (i in barrowedBooks){
+        for (i in borrowedBooks){
             counter +=1
             println("${counter}: $i" )
         }
         println("------------------------------")
     }
     //Function for Borrow books.
-    fun borrowBooks1(book:Int){
-        barrowedBooks.add(books1[book])
-        books1.remove(books1[book])
+    fun borrowBooks2(book:Int):Int{
+        borrowedBooks.add(books1[book-1])
+        println("You Borrowed ${books1[book-1]} ")
+        books1.remove(books1[book-1])
         println("Success! Dont Forget to return It.")
         println("------------------------------")
+        return book
     }
     //Function for users input details.
     fun userInfo1(fullname:String,date:String){
@@ -91,11 +93,12 @@ class MiniLibrary{
         println("------------------------------")
     }
     //Function return books
-    fun returnBooks1(book: Int) {
-        books1.add(books1[book])
-        barrowedBooks.remove(books1[book])
-        println("Success The book is Returned to our library!\nThank You!")
+    fun returnBooks1(book: Int):Int {
+        books1.add(borrowedBooks[book-1])
+        println("Success! ${borrowedBooks[book-1]} is Returned to our library!\nThank You!")
+        borrowedBooks.remove(borrowedBooks[book-1])
         println("------------------------------")
+        return book
     }
     fun printUser(){
         var counter1 = 1
@@ -103,7 +106,9 @@ class MiniLibrary{
         println("Borrowers Details:")
         println("------------------------------")
         for (i in fullName1) {
-            println("${counter1}:\nName: $i\nDate Borrowed: ${datenow1[counter2]}")
+            println("${counter1}:\nName: $i\n" +
+                                  "Date Borrowed: ${datenow1[counter2]}\n" +
+                                  "Borrowed Books: ${borrowedBooks[counter2]}")
             println("---------------------------------")
         }
     }
