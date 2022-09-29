@@ -30,7 +30,6 @@ fun main (){
         break
     }
 }
-//hf
 class Amount{
     // total input of user
     fun computeAmount(counter:Double):Double{
