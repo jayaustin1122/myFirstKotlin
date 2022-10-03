@@ -12,9 +12,10 @@ fun main(){
         //Main menu of the program
         println("---MAIN MENU---")
         print("[1]:Books\n[2]:Borrow a Book\n[3]:Return Book\n[4]:Borrowers Info\n[5]:Borrowed Books\n[6]:Exit\nSelect: ")
-        var select = readln().toString()
+        try {
+            var select = readln().toInt()
         // Checking Conditions
-        if (select.length > 2) {
+        if (select >7 ) {
             println("Invalid Input/Out of range")
             break
         } else if (select.toInt() == 1) {
@@ -30,14 +31,28 @@ fun main(){
             library.listofBooks1()
             println("---Borrow a Books---")
             print("Select Book Num: ")
-            var input3 = readln().toInt()
-            library.borrowBooks2(input3)
+            try {
+                var input3 = readln().toInt()
+                library.borrowBooks2(input3)
+            }catch (e:IndexOutOfBoundsException){
+                println("Invalid Input! Your Input is Not in the list.")
+            }catch (e:Exception){
+                println("Invalid Input! or Invalid Input For Using A String")
+                println("Please Try Again.")
+            }
         } else if (select.toInt() == 3) {
             library.borrowed_Books()
             println("---Return Book---")
             print("Enter Book Number: ")
-            var returnBook = readln().toInt()
-            library.returnBooks1(returnBook)
+            try {
+                var returnBook = readln().toInt()
+                library.returnBooks1(returnBook)
+            }catch (e:IndexOutOfBoundsException){
+                println("You don't have a Borrowed books or Invalid Input.")
+            }catch (e:Exception){
+                println("Invalid Input! or Invalid Input For Using A String")
+                println("Please Try Again.")
+            }
         } else if (select.toInt() == 4) {
             library.printUser()
         } else if (select.toInt() == 5) {
@@ -45,8 +60,12 @@ fun main(){
         } else if (select.toInt() == 6) {
             break
         }else {
-            println("Invalid Input! Use Numbers only")
+            println("Invalid Input! Please Use a Valid Input.")
             break
+        }
+        }catch (e:Exception) {
+            println("Invalid Input!")
+            println("Please Try Again.")
         }
         print("Go to Main Menu?Y/N: ")
         var select3 = readln()
@@ -55,7 +74,7 @@ fun main(){
         else if (select3 == "N" || select3 == "n"){
             println("Exiting")
             break
-        }else print("Invalid Input")
+        }else print("Invalid Input!")
         break
     }
 }
