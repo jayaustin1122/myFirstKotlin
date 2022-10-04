@@ -2,9 +2,8 @@ package Activities04A
 /* Activity 04 - A Implement Activity 01 - B using OOP use all OOP concepts */
 fun main(){
     println("\t---Welcome to E-Library---")
-    var library = BookDetails()
+    var library = Books()
     var borrow = Borrow()
-    var returnBooks = ReturnBooks()
     while (true) {
         //Main menu of the program
         println("---MAIN MENU---")
@@ -22,8 +21,8 @@ fun main(){
         } else if (select == 1) {
             library.listofBooks1()
             println("Notes:")
-            library.pages()
-            library.category()
+              borrow.pages()
+              borrow.category()
         } else if (select== 2) {
             //enter user's details
             println("---Fill This Form to Borrow a book---")
@@ -37,8 +36,8 @@ fun main(){
             print("Select Book Num: ")
             try {
                 var input3 = readln().toInt()
-                borrow.borrowBooks2(input3)
-                library.notesAndMessages()
+                library.borrowBooks2(input3)
+                borrow.notesAndMessages()
             }catch (e:IndexOutOfBoundsException){
                 println("Invalid Input! Your Input is Not in the list.")
             }catch (e:Exception){
@@ -46,12 +45,12 @@ fun main(){
                 println("Please Try Again.")
             }
         } else if (select == 3) {
-            borrow.borrowed_Books()
+            library.borrowed_Books()
             println("---Return Book---")
             print("Enter Book Number: ")
             try {
                 var returnBook = readln().toInt()
-                returnBooks.returnBooks1(returnBook)
+                library.returnBooks1(returnBook)
             }catch (e:IndexOutOfBoundsException){
                 println("You don't have a Borrowed books or Invalid Input.")
             }catch (e:Exception){
@@ -61,7 +60,7 @@ fun main(){
         } else if (select == 4) {
             library.printUser()
         } else if (select == 5) {
-            borrow.borrowed_Books()
+            library.borrowed_Books()
         } else if (select == 6) {
             break
         }else {

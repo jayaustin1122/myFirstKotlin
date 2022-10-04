@@ -5,7 +5,7 @@ interface MoreInfo {
         println("This Book have a 100 pages in Total")
     }
     fun category(){
-        println("Category is History")
+        println("Category is not fully Organized Thank you!")
     }
 
 }
