@@ -55,8 +55,7 @@ fun main(){
                 println("You don't have a Borrowed books or Invalid Input.")
             }catch (e:Exception){
                 println("Invalid Input! or Invalid Input For Using A String")
-                println("Please Try Again.")
-            }
+                println("Please Try Again.") }
         } else if (select == 4) {
             library.printUser()
         } else if (select == 5) {

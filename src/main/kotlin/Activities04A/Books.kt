@@ -1,5 +1,4 @@
 package Activities04A
-
 open class Books:OtherInfo(){
     var books1 = arrayListOf<String>("Trigo", "Comic Book", "Newspaper","Science")
     var borrowedBooks = arrayListOf<String>()

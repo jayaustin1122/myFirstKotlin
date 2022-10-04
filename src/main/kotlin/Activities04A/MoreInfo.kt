@@ -7,5 +7,4 @@ interface MoreInfo {
     fun category(){
         println("Category is not fully Organized Thank you!")
     }
-
 }
