@@ -1,7 +1,7 @@
 package com.oop
 fun main(){
     //calling abstraction and encapsulation
-//    var joePerson = Person()
+//    var joePerson = com.tutorials.Person()
 //    joePerson.name = "Peter"
 //    println(joePerson.name)
 //    joePerson.age = -1

@@ -1,4 +1,10 @@
 package com.oop1
+fun main(){
+    var dog = Dog()
+    var chicken = Chicken()
 
-class Main {
+    dog.walk()
+    dog.makeSound()
+    chicken.walk()
+    chicken.makeSound()
 }

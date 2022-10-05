@@ -1,4 +1,0 @@
-package practice
-
-class Main {
-}
