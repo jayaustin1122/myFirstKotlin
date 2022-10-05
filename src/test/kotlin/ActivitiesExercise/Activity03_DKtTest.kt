@@ -1,26 +1,27 @@
 package ActivitiesExercise
+import com.exercises.Grocery1
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 internal class Activity03_DKtTest{
-    //add napkin
+    //com.tutorials.add napkin
     @Test
     fun checkAddNapkin(){
         var check = Grocery1()
         assertEquals("Napkin",check.addItem("Napkin",12.0,3))
     }
-    //add Tissue
+    //com.tutorials.add Tissue
     @Test
     fun checkAddTissue(){
         var check = Grocery1()
         assertEquals("Tissue",check.addItem("Tissue",10.0,5))
     }
-    //add Soap
+    //com.tutorials.add Soap
     @Test
     fun checkAddSoap(){
         var check = Grocery1()
         assertEquals("Soap",check.addItem("Soap",15.0,12))
     }
-    //add Toothbrush
+    //com.tutorials.add Toothbrush
     @Test
     fun checkAddToothBrush(){
         var check = Grocery1()
