@@ -30,6 +30,3 @@ fun main () {
     }
     println("\nThank You.")
 }
-
-
-
