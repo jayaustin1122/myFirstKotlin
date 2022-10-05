@@ -6,7 +6,7 @@ Use Activity 02 - E identify scenarios when borrowing a book and create unit tes
 fun main(){
     //Implement Activity 02 - B using Classes.
     println("\t---Welcome to E-Library---")
-    var library = MiniLibrary()
+    var library = MiniLibrary1()
     while (true) {
         //Main menu of the program
         println("---MAIN MENU---")
@@ -77,7 +77,7 @@ fun main(){
         break
     }
 }
-class MiniLibrary{
+class MiniLibrary1{
     var books1 = arrayListOf<String>("Trigo", "Comic Book", "Newspaper","Science")
     var borrowedBooks = arrayListOf<String>()
     var fullName1 = arrayListOf<String>()
