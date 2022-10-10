@@ -1,4 +1,4 @@
-package com.CaseStudy
+package com.caseStudy
 
 open class Students:Person(),OtherFuctions {
     init {
@@ -7,4 +7,5 @@ open class Students:Person(),OtherFuctions {
     fun course (course:String){
         println("Crouse is $course")
     }
+
 }

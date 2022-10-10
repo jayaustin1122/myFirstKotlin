@@ -1,4 +1,4 @@
-package com.CaseStudy
+package com.caseStudy
 
 interface OtherFuctions {
     open fun schedule(schedule:String){
@@ -7,4 +7,5 @@ interface OtherFuctions {
     open fun department(dept:String){
         println("Department: $dept")
     }
+
 }

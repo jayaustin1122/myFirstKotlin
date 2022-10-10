@@ -1,4 +1,4 @@
-package com.CaseStudy
+package com.caseStudy
 
 fun main(){
     var admin = Admin()
@@ -8,4 +8,5 @@ fun main(){
     var studentF2F = StudentFacetoFace()
     var fullTime = FullTime()
     var partTime = PartTime()
+
 }

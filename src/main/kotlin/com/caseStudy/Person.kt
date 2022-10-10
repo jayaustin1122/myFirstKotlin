@@ -1,4 +1,4 @@
-package com.CaseStudy
+package com.caseStudy
 
 open class Person {
     var fullName = ""
@@ -16,4 +16,5 @@ open class Person {
                 "ID: $newIdNumber\n" +
                 "Type: $newType")
     }
+
 }
