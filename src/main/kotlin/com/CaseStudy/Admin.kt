@@ -1,6 +1,6 @@
 package com.CaseStudy
 
-class Admins:Person(),Others {
+class Admin:Person(),OtherFuctions {
     init {
         println("---Admin---")
     }

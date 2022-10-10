@@ -1,5 +1,6 @@
 package com.CaseStudy
-class FullTime {
+
+class FullTime:Teachers() {
     init {
         println("---Fulltime---")
     }

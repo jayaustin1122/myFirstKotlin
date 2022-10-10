@@ -1,6 +1,6 @@
 package com.CaseStudy
 
-class StudentOnline:Students(),Others {
+class StudentOnline:Students(){
     init {
         println("---Online Schedule---")
     }

@@ -1,6 +1,6 @@
 package com.CaseStudy
 
-class Deans:Person(),Others {
+class Deans:Person(),OtherFuctions {
     init {
         println("---Deans---")
     }

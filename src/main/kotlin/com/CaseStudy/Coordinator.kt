@@ -1,6 +1,6 @@
 package com.CaseStudy
 
-class Coordinators:Person(),Others {
+class Coordinator:Person(),OtherFuctions {
     init {
         println("---Coordinators---")
     }

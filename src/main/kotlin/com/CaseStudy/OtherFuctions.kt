@@ -1,6 +1,6 @@
 package com.CaseStudy
 
-interface Others {
+interface OtherFuctions {
     open fun schedule(schedule:String){
         println("Schedule is: $schedule")
     }

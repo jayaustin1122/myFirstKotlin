@@ -1,6 +1,6 @@
 package com.CaseStudy
 
-open class Students:Person(),Others {
+open class Students:Person(),OtherFuctions {
     init {
         println("---Students---")
     }

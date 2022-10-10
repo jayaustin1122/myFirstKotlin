@@ -11,6 +11,9 @@ open class Person {
         var newIdNumber = idNumber
         var newType = type
 
-        println("Full Name: $newFullname\nAge: $newAge\nID: $newIdNumber\nType: $newType")
+        println("Full Name: $newFullname\n" +
+                "Age: $newAge\n" +
+                "ID: $newIdNumber\n" +
+                "Type: $newType")
     }
 }

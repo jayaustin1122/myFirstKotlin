@@ -1,11 +1,11 @@
 package com.CaseStudy
 
 fun main(){
-    var admin = Admins()
-    var coordinators = Coordinators()
+    var admin = Admin()
+    var coordinators = Coordinator()
     var deans = Deans()
     var studentOnline = StudentOnline()
-    var studentF2F = StudentF2F()
+    var studentF2F = StudentFacetoFace()
     var fullTime = FullTime()
     var partTime = PartTime()
 }

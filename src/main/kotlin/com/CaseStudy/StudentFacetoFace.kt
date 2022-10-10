@@ -1,6 +1,6 @@
 package com.CaseStudy
 
-class StudentF2F:Person(),Others {
+class StudentFacetoFace:Students(){
     init {
         println("---F2F Schedule---")
     }
